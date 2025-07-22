@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Baa! ❤️</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #response-container {
+            display: none;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        #voice-note {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            display: none;
+        }
+
+        #no-message {
+            display: none;
+            color: #ff6b6b;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        #voice-note-input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex-grow: 1;
+        }
+
+        .voice-note-container button {
+            padding: 8px 16px;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .voice-note-container button:hover {
+            background-color: #ff5252;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap"
+        rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="greeting">
+        <div class="scratch-card">
+            <div class="scratch-area">
+                <div class="scratch-content">
+                    <h1>Happy Birthday Baa! ❤️</h1>
+                    <div class="floating-hearts">
+                        <div class="heart"></div>
+                        <div class="heart"></div>
+                        <div class="heart"></div>
+                    </div>
+                </div>
+                <div class="scratch-overlay"></div>
+            </div>
+            <div class="scratch-instructions">
+                Scratch here to reveal your surprise!
+            </div>
+        </div>
+        <div class="scratch-button" onclick="showLetter()">
+            🎁 Open Letter
+        </div>
+    </div>
+    <div class="envelope" onclick="window.location.href='../index.html'">
+        💌
+    </div>
+    <div class="letter-container hidden">
+        <div class="container">
+            <header>
+                <h1>Happy Birthday Baa! <span class="heart">❤️</span></h1>
+            </header>
+
+            <div class="letter">
+                <p>Happiest Birthday baaaa!!!</p>
+                <p>Happiest Birthday Akshita!!!</p>
+                <p>Happiest Birthday pagall!!</p>
+                <p>Happiest Birthday giraffe!!</p>
+                <p>Happiest Birthday lambi naak vali!!</p>
+                <p>Happiest Birthday bina lips valii!!</p>
+                <p>Happiest Birthday mi amiga!!</p>
+                <p>Happiest Birthday my heart!!</p>
+                <p>Happiest Birthday sweetheart!!</p>
+                <p>Happiest Birthday honey!!</p>
+                <p>Happiest Birthday byoli!!</p>
+                <p>Happiest Birthday laati!!</p>
+                <p>Happiest Birthday my favourite!!</p>
+                <p>Happiest Birthday my heart!!</p>
+                <p>Happiest Birthday my smile!!</p>
+                <p>Happiest Birthday my breath!!</p>
+                <p>Happiest Birthday in every language possible!!</p>
+
+                <p>I wish ki aap theek ho.. aur khush ho.. thoda daant dikha ke hasa karo aap.. acchi lagti ho.. i hope
+                    aap
+                    apna ye din enjoy karogi.. icecream party.. (chocobar) .. aisa din ho aur party na ho ye toh
+                    impossible
+                    hai.. ba ka bday hai.. jor se bolo happy birthday.. aaree saare bolo happy birthday.. milke bolo
+                    happy
+                    birthday.. bolte jao happy birthday.. happy birthday.. happy birthday.. happy birthday... Ooyee
+                    hoyee
+                    oyye hooyeee oyee hooyee..</p>
+
+                <p>I wish i could find more beautiful words to wish you.. but hme aate hi nhi itne words.. hm chahte the
+                    ki koi gift bheje par hehe cheeze sahi nhi hai apne beech jaisi honi chahiye thi aur aapko pta hi hm
+                    kaise hai.. aise mein toh bhejenge
+                    nhi.. par koi na.. jo hota hai acche ke liyea hi hota hai toh shyd ye bhi.. par ye kaisa accha hai
+                    hme
+                    nhi smjh aa raha.. par thik hai hme pta hai aap badamteez ho :3... </p>
+
+                <p>kaise kya hota hai sb.. accha chod ye sb.. aur ye bta kya haal chaal hai aapke.. maje mein toh hai na
+                    re
+                    chori... kyuki aapka hasna is the important thing... my heart wants to see you happy always..
+                    getting
+                    all the things you want and making you happy.. achieve your goals at every cost.. the laugh of
+                    yours,
+                    when i hear them they help me to forget the my pain.. it just brings some sort of happiness when
+                    hear
+                    those giggles.. haha..</p>
+
+                <p>chal thoda sa serious hona band karta hu.. mere buddhuu ka birthday hai.. </p>
+
+                <p>Happy Birthday baa.. haan nahi hai pehle jaise cheeze par aap ab bhi utni hi imp ho jitni pehle thi
+                    ya
+                    jayda hi imp ho.. hm kabhi hate nhi kiyea hai aapko kisi bhi cheez ke liyea ba.. just gussa hua
+                    hu(vo
+                    toh ho jata hu ittu ittu si baat pe) par hate nah kabhi nhi kar skta.. gussa hoke bhi
+                    aapka soch jaunga baa... gusse mein bhi aapka dhyaan hota hai hme jb ladai hoti hai and i say alot
+                    but
+                    phir turnat realise hota hai kya phaltu bol diya hai islie sb delete kar deta hu par late ho gya
+                    hota
+                    hu.. hmne itne dino se naa baat karke ik cheez seekha hai ba ki baat na hone se kuch nhi hota.. ye
+                    hmne
+                    khud se seekha hai aap nhi sikhayi chall
+                    hatt beewkoof</p>
+
+                <p>ba hamare pass bahut saari stories aapke liyea and i adore them all no matter how they are: chal sab
+                    ki
+                    baat karta hu ik ik karke order mein nhi hogi stories kyuki ik din mein nhi likha hai kuch bhi sb
+                    cheeze
+                    random hogi... iske liyea sorry </p>
+
+                <p>Jb aap abhi feb mein ghar gyi thi na toh hmne nannu se sote hue ik photo manga tha uss buddhu ne
+                    diya..
+                    photo me i can see your cheeks.. aur us photo meinn aapke cheeks ke 3 til dikh rheee.. haaayeeeeeee
+                    kitni pyaari lagti hai jitni baar dekhta hu utni baar lgta hai ki touch kar lu.. sir pe haath
+                    pheeru..
+                    sir pe haath rkh ke thumb se gaalo ko softly and gently rub karoo... koi glt intention nhi hai don't
+                    worry..(i have kissed alot pta nhi kitni baar i have lost the count now) </p>
+
+                <p>You're mature yet childish.. you know with whom you can be "you-akshita".. vo real vaali akshita jo
+                    naak
+                    se nikal ke khaati hai.. kaan se ganda nikal ke taste karti hai.. kitni gandi hai yrr chiii chiii..
+                    aise
+                    kaun karta hai haha.. par i know sb hasane ke liye bolti hai mood lite karne ke liye bolti hai..
+                    apni
+                    bhi burai karti hai doosro ko hasane ke liyea.. and maybe ye sb hme late smjh aa rha.. you're
+                    stronger
+                    than you imagine.. its hard to be this caring for others today.. its hard to do things just out of
+                    selflessness.. but you do..</p>
+
+                <p>Hme pehle lgta tk kaisi hai ajeeb si kuch bhi bolti rehti hai.. call pe jab baat karna start kiyea
+                    the tb
+                    ye sb bole the.. kaisi pagal hai kuch bhi bla bla bolti hai.. aadhe time toh sense hi nhi banati..
+                    par
+                    ab smjh aata hai ki kyu karti thi.. kitna sbka sochti hai kitna chahti hai logo ko.. sbki Khushi ka
+                    dekh
+                    rhi hoti hai.. sbki chinta hai iss buddhu ko.. badtameez ❤️..</p>
+
+                <p>Chll chll jayda khush mat hoo pta hai bahut khush hai abhi aap.. hai na haii naa.. muskura mat.. ae
+                    aee
+                    blush blush hooohooo gaal laal ho gye madam ji ke.. bahut taarif sun li hai na haan kaun hi karega
+                    aap
+                    ki taarif aaj tk kisi ne ki hai aisi taarif bol na.. bol naa.. hme ye sb garhwali mein likhna tha
+                    par
+                    hme aata nhi pyaari hmne bola tha aapko sikhane ko par buddhu ne sikhaya hi nhi.. aapki hi glti hai
+                    sikahayi hoti toh aaj ye sb garhwali mein bol pata na.. huhhhh.. dekhta hu abhi birthday mein time
+                    hai
+                    toh shyd kahi se seekhne ka try karunga huehue.. aurr phrr aapke birthday pe sb garhwali mein
+                    likhunga
+                    ya shyd poora voice note mein kar dunga.. heeyyy raamm itna kaise bol paunga.. dekhta hu jaisa hoga
+                    seekh paya toh try karunga.. jitna ho payega utna karunga.. aivi mamuli insaan ka birthday thodi na
+                    haiiiiiiiiiii.. meree baaaa kaaaa... Happpiessstttt birthdayyyyyy baaaaaaaa</p>
+
+                <p>nannu se hmne aapki holi vali photo maana tha aap bahar khel rhi thi.. haath mein color nikal rhi
+                    thi..
+                    baalon ka bun bana rkha hai face pe poore color laga hua hai usmein bhi pyaari lag rhi hme aap..
+                    ajeeb
+                    si hai yrrr khush reh hasti reh muskurati reh thats it..</p>
+
+                <p>Ba hme bahut kuch dena tha aapko bahut sari khushiyan bahut sara chocobar.. bahut saari black
+                    currant..
+                    hme khana nhi banana aata par hme seekhna hai.. aapko aapne haathon ka bana rajma chawal khilana
+                    hai,
+                    just to hear "heavy ho gya" .. ittu sa khake heavy ho jata hai iss buddhu ka.. kurkure(kurkura) lana
+                    tha..
+                    apne haathon se khilana thaa..</p>
+
+                <p>I still find you pure i still find you kind i still find you funny i still find you talkative i still
+                    find you caring i still find you mischievous i still find you prettiest i still find you stupid i
+                    still
+                    find you.. haha word hi khtm</p>
+
+                <p>Happy birthday to my favourite and most beautiful person of all.. itna likh dunga ki padh bhi nih
+                    payegi.. happy birthday to this year of yours.. 20 ki ho gyi hai aaj... par akal akal toh 5 saal
+                    bacche
+                    ki hai innocent si.. kuch malum ni hai kya kaise karna hai.. happiest birthday ba.. aur pta hai iss
+                    poore message mein bahut kuch off hai kyuki sb alga lag time pe likha haii.. haha..jab bahut yaad
+                    aati
+                    hai toh uss din likhta hu.. toh saare paras alag alga jgh pade hai.. bday ke kuch din pehle baith ke
+                    sab
+                    sahi karunga.. aur kucch include karna hua toh vo bhi kar dunga..</p>
+                <p>i remember how you used to fight me.. jab ladti hai toh accha lagta hai haan kuch der hm bhi ladte
+                    hai
+                    par phr acchanak se mann bhar jata hamara (kyu bhar jata hai baad mein bta dunga) phr hm jeetne de
+                    dete
+                    hai aapko.. umm jaise uss din jab hm uttrakhand ki burai kar rahe the.. abhi bhi karunga uttrkahand
+                    ki
+                    aur aapki bhi burai kya kare legi be chilgozi.. i want you to win each battle of yours even if its
+                    against me.. seeeing you happy is the only way i can make myself happy</p>
+                <p>how my eyes look at you i even dont know that yet.. </p>
+
+                <p>I miss you a lot each and every day.. maybe every hour too.. Min aur sec jayada ho jayega .. kuch toh
+                    ho
+                    yrrr jo bina baat kiyea itna pyaar mein duba di haii itna thodi jana tha pyaar mein hme buddhu par
+                    accha
+                    hai it makes me happy even i think about you.. it brings joy on my face when i remember you.. hme
+                    sapne
+                    nhi yaad hote nhi toh usmein bhi aap hoti im damn sure</p>
+
+                <p>Why do have things to be like this.. where did i make it wrong.. what wrong things did I do... Kya
+                    galat
+                    manga tha kuch bhi nhi manga tha bss aap saath raho bss itna chahiye tha pyaar bhi nhi chahiye tha
+                    hme..
+                    thodi bahut baat ho jati thi usmein hi khush ho jata tha.. khud adjust kar leta tha.. baa busy hai
+                    isslie nhi kar pa rhi baa ki bhi life hai baa ke bhi dost hai.. sb smjhane ki koshish karta tha..
+                    par
+                    adjust adjust karte karte adjust hi karta reh gya.. haha.. </p>
+
+                <p>par hame nhi fark padta ki aap pyaar kar rhi ya nhi kar rhi.. karogi ya nhi karogi... Saath rahogi ya
+                    nhi
+                    rahogi.. kuch nhi jaan na hme.. na force karna hai aapko.. bs pyaar karna hai.. return mein kuch nhi
+                    chahiye.. i dont want anything in return.. haan shyd ik cheez chahiye par vo bhi aisa koi jaruri nhi
+                    hai.. (just remember ki tha koi jo bs aapse pyaar karta hai)</p>
+
+                <p>And with everything happening in my life.. Sochta hu thoda aur pyaar karu so that aapki aankhon ke
+                    alawa
+                    kuch na dikhe.. just yours.. agr aaj bhi
+                    koi aake hmse pooche.. do i regret cherishing you or do i regret talking to you.. no not a chance..
+                    i m blessed that i got met with you.. i feel im on nine clouds when i hear you smile when i hear
+                    those
+                    giggles of yours.. there's nothing better cure for my ears than those..</p>
+
+                <p>Aapko yaad hai jb we were on calls and one day i started to cry silently without letting you know
+                    (uss
+                    din hme realise hua how deeply I cherish every moment with you..) and i don't know how you found
+                    out.. aapne poocha tha kya hua
+                    kyu ro rha.. hmne bataya tha uss din aapko we won't be together par aapne bola tha hm honge.. i want
+                    to
+                    believe what you had said cause i always want to believe you and i always do.. </p>
+
+                <p>Isee attraction nhi boll dena.. ab toh hm bhi sure hai ki ye attraction nhi ho skta baa.. if i had
+                    power
+                    and if there are any universes where i haven't met and started cherishing you yet.. i want to go
+                    there and
+                    scold my other self for not finding you.. i'll ask him to find you.. ill ask him to keep you.. ill
+                    ask
+                    him to hold you dear to his fullest.. for you i want every me to hold dear every only you..</p>
+
+                <p>Im your swan boy.. so you don't need to worry about what if i stop holding dear to you and all.. i
+                    won't stop
+                    holding dear to you.. i wish things were better between us.. but thats what we get for my sins..i
+                    have done
+                    something stupid which i recall everyday and night.. im ready to hold dear to you this way also
+                    where i don't get to talk to you or hear you.. connection doesn't need form..</p>
+
+                <p>I'll be loyal even if it means that ive to live my whole life longing for you..<br>
+                    My heart found you without knowing you<br>
+                    My soul recognized you without meeting you<br>
+                    I feel your presence without touching you<br>
+                    I sense your essence without smelling you<br>
+                    I'm connected to you without holding you<br>
+                    I'm embraced by your spirit without hugging you<br>
+                    I'm devoted to you for being you..</p>
+
+                <p>Ba aap bolti ho bura sochta hu aapka doosro ke samne bura bolta hu.. chugliyan karta hu.. nhi pyaari
+                    kbhi
+                    nhi karta.. kitna miss karta hu vo bhi kisi se share nhi kar pa raha.. kitna pyaar karta hu vo bhi
+                    nhi
+                    bol skta ba.. jo close hai unko tk nhi bol skta.. kisi se kuch nhi keh skta ba.. sbb apne pass rkha
+                    hai.. haan bs logo ko ye pta hai ki kisi se pyaar karta hu.. baaki log puchte kyu baat band ho gyi
+                    kyu
+                    baat nhi karta kya hua.. uspe kuch nhi bolta.. hass ke ignore maar deta hu ya bol deta hu abhi vo
+                    time
+                    nhi aaya hai.. jhuth bolna seekh gya hu.. kaise cheezein chupate hai ye seekh gya hu.. doosro ko
+                    accha
+                    dikha ke khud ko bura kaise dikhate ye seekh gya hu.. isslie please ye mat sochna ki aap ka bura
+                    soch
+                    skta hu..
+                    Ba kuch bhi soch kaisa bhi sochna hai soch liya kar hm kisi cheez ke liyea nhi ladenge par agr aap
+                    kabhi
+                    dobara glti se bhi bol di ki hm aapka bura chahte hai ya aapko logo ke saamne bura bolte hai toh phr
+                    hm
+                    khudko kbhi nhi maaf kar payenge kyuki hm har cheez smjhaye hai ba.. hm nhi chahenge aapka bura
+                    whether
+                    you're with me or not.. ye pyaar saath rehne ke liyea nhi kiya hai hmne.. aapko khush dekhne ke
+                    liyea
+                    kiya hai.. pehle bhi jab baat start hui thi toh aapne bata diya tha ki aapko insab mein vishwas nhi
+                    hai
+                    sb log chod jate hai koi saath nhi deta hai sbka kharab hota hai.. aur hmne aapko bola tha hm nhi
+                    hai
+                    vaise hm nhi jayenge chod ke aapko.. hm proof karenge ki ye cheez vishwas karne layak hai hm end tk
+                    hai
+                    aapke saath.. isslie kbhi bhi glt nhi sochna ki ye insaan aapka bura chahega.. jb hm use bgrh ka
+                    bolte
+                    the toh usse mtlb kuch aur hota tha kaise samjhau... Nothing else.. aap kya use karogi haha
+                    Hme pta hai hm glt hai.. isslie agr ho sake toh maaf kar dena.. abhi bhi kayi cheezeon ki vjh se
+                    hurt
+                    kar rha hunga aapko.. im trying ba ki kisi ko hurt na karu.. sbse bahut kuch poochna hai kehna hai
+                    par
+                    nhi keh pata kyuki unhe hurt hoga isslie sb apne pass hi rkh jata hu.. ive been cursed or im the
+                    curse
+                    idk..
+                    likh toh Raha ye sb par bhejunga ya nhi ye bhi nhi pta.. kyuki mana kar chuka hu.. now ive to fight
+                    with
+                    that.. ..
+                    Ik shaam usse baat karunga</p>
+
+                <!-- <div class="note-divider">
+                <span>April 4, 10:42 AM</span>
+            </div> -->
+
+                <p>Hme gussa hona nhi psnd baa.. blkl bhi nhi psnd na kisi pe chillana pasnd na kisi se ladna pasnd..
+                    isslie
+                    jb hm gussa ho jate hai toh hm bahut kuch bol jaate hai jo hm blkl mean bhi nhi kar rhe hote.. kabhi
+                    jo
+                    sochta bhi nhi vo tk bol jata hu.. aur phr bolne ke baad instant pta chlta hai ki kya glt bol diya
+                    par
+                    uss time toh koi fayda hota nhi kyuki bol toh chuka hi rehta hu.. iski vajah se i think i have hurt
+                    you
+                    a lot maybe even more times than i know.. sorry ba.. kabhi nhi hurt karna chahta aapko.. hmne kabhi
+                    bola
+                    tha "aapko ik baar hurt karta hu toh phr khudko 100 baar hurt karta hu" i still mean this.. i never
+                    ever
+                    want to hurt you.. hm blessed hai ki aap itni mature and understanding ho ki you realise hm gusse
+                    mein
+                    bol dete hai.. thank you akshita.. thank you for being so understandable ❤️</p>
+
+                <p>Accha pta hai kya hua abhi parso i messaged you.. kuch to message kiya tha.. ki kitni cute hai khaa
+                    jaungaa bla blaa.. haha aur ptaa hai aapne kya message kar diyaa "i want the same.." hayeeeeee
+                    haaayeeeeeee.. agr pass hoti toh i would have kissed you at that time.. aise thodi bol dete hai
+                    buddhu..
+                    i really want to wait for you regardless of whats going to happen.. i will do everything in my power
+                    to
+                    have you.. And for you.. for you i want to be the man who will make me give you everything..</p>
+
+                <p>If you were a knife, sharp and divine,<br>
+                    Id turn myself in, no fear, no sign.</p>
+
+                <p>Nahi ho rha yarrr.. sachii nhi ho rha no matter what i doooo nhii hoo rhaaa.. nhii jaa rhii dimaaag
+                    se na
+                    dill seee hahaha.. kisii koo bhii dekhh luuu aap yaaad aaa jati hooo.. i try to find you in every
+                    person.. nhi pta kyuuuuuu.. hme lgne lgta hai doosra insaan aap kyu nhi hooo.. hme khud nhii pta ki
+                    hm
+                    aisa kyu kar rhe hai.. bs lgta hai vo insaan aapke jaisa hai thats it.. samne se koi bhi jaaye
+                    aaye aap ka dhyaan aa rha hmee aur ye hm nhi bta paa rhe kisii seee.. jab hadd se jayda yaad aa rhi
+                    toh
+                    bs aankh band karke soch leta hu aapko aapki walk bolne ka tarika hairs lips gaal pe til haath per
+                    gardan sb yaad aa jata hai.. i don't know hmne aapko bahut imp bana liya hai.. itna ki shyd ab aap
+                    khud
+                    bhi nhi soch sakti.. you're the essence of what matters to me.. you're enough for me..</p>
+
+                <p>Kaash hm capable hote hai..... Hihi afsoos nhi hai abhi.. im not enough for you right now.. vo glt
+                    vala
+                    nhi baa.. earning and being sufficient vala.. abhi hm kuch provide nhi kar payenge.. isslie hm aapko
+                    choose karne ke liye bhi nhi bolte ki hme choose kar.. hme capable hona hai aapke liye ik better
+                    life
+                    deni hai aapko.. khush rkh saku aapko hmesha</p>
+
+                <p>Hamare bday vale message mein aapne french mein likha tha sometime giving up is important.. haan
+                    important hota hai par agr aapko kisi doosre insaan kisi doosre ki talaash ya need nhi hai toh give
+                    up
+                    karke kya fayda.. give up toh tb karte hai jab kuch accha behtar chahiye hota hai.. par hme nhi
+                    chahiye
+                    hm khush hai aise hi hmari chinta mat kar buddhu.. En amour, il n'y a pas d'abandon
+                    Aapko jana hai toh khushi khushi jao kuch nhi bolenge.. to hold dear to you is my choice. Vo hai na
+                    Geeta ka
+                    shlok 2.47 vala
+                <article>'You have a right to perform your prescribed duties, but you are not entitled to the fruits of
+                    your
+                    actions. Never consider yourself to be the cause of the results of your activities, nor be attached
+                    to
+                    in action.'</article>
+                Bss apne karm kar rha.. </p>
+                <p>Kal April's fool hai.. last time kya kiya tha aapne aapko yaad hai? Buddhu bewkoof.. hm exam deke
+                    nikle
+                    the aur vo sb message dekhe and i was like shit.. turant aankhon mein aasnu the..ye kya hua abhi toh
+                    exam hai admit hone jaa rhi pass
+                    mein koi tha bhi nhi akele thi dun mein koi chacha jii aane vale the phr unke saath jati doctor ke
+                    pass..aankhon se aansu bhar gye the rone vale the hm ..jldi se chal ke hostel bhaag rha tha call pe
+                    call kar rha tha.. and then pta chlta hai ki buddhu ji ne hm ullu banaya hai 😂😂</p>
+                <p>aise ni kiya kar mar var jaunga kisi din heart aatack aa jayega hme hahaha</p>
+
+                <p>Hehe janta hu bore kar raha hunga ab aapko isslie agr nhi mann toh band kar de read karna ab.. thak
+                    jaogi
+                    aaram karo jaake..
+                    Bataya tha na aapko ki aapke baad kisi aur se nhi karenge hm.. aap last ho hamari aur shyd first bhi
+                    hehe.. nahi bataunga kaise first par ho.. i want to breath same air as you i want to walk on same
+                    path
+                    as you i want to eat same thing as you i want to sing same as you i want to take care of everything
+                    like
+                    you....</p>
+
+                <p>Baa happy birthday i hope ki hm ruin nii kar rhe.. aapko hm kisi cheez ke liye mana nhi karte baa na
+                    kabhi karenge aapko khud realise hua toh accha hai nhi toh sb aise hi thik hai dono ke liyea.. </p>
+
+                <p>Acchaa pta hai jab hm kuch couples vala dekhte hai na toh hmare dimaag mein pehla thought aap aati
+                    hoooo.. hehee.. itna haq hmne khud ko kabhi diya hi nhi ki koi aur aa payee aur naa denge hm
+                    huehuehueee.. hold dear to you my billautii(billi ko bolte hai hamare idhar )</p>
+
+                <p>Baa hm shyd galat generation mein pyaar doondh rahe.. yaha abhi kaun kiska hai kisiko bhi nhi pta
+                    hota..
+                    aur iss time mein hm ik aise insaan ban chuke hai jo bs wait karna chaa rha aur ussko khud nhi pta
+                    kya
+                    hoga aage par bs karna hai.. casual relationship aur live in ke time mein hm kisi ka permanent ban
+                    gye
+                    hai bina uske commitment ke.. par thik hai kabhi toh samjhegi kya chahiye hme real mein.. "hope this
+                    world of yours has a little space for someone like me.."
+                    And don't worry i won't blame you for anything.. kyuki kaunsa hm bhi sahi hai.. hmne bhi toh bahut
+                    glt
+                    kiya hai koi nhi hai jo sahi hai pura.. and agr hm blame karenge aapko toh phr hm aur glt honge and
+                    blame karne se kuch nhi hoga faltu bs guilt dunga and pyaar mein ye karna galat hai.. baaki ka nhi
+                    pta
+                    par hmare liyea toh galat hai.. hm hai hi different .. and when i want to hold you close to
+                    fullest.. im trying
+                    my best not to hurt you while writing all these things.. isslie please agr kahi pe hurt ho toh maaf
+                    kar
+                    dena.. </p>
+
+                <p>Kabhi kabhi toh messages type karta hu par phr sb delete kar deta hu.. kayi baar sochta hu ki message
+                    karu par phr yaad aata hai ki jaana ka boli hai aur khud se toh aayenge nhi hm.. aana toh hai par ab
+                    aapko regret hone lga hai hmse baat karke aapke liye vo din manhoos ho chuka hai jis din hm aapko
+                    mile
+                    the.. aur kuch na ho isslie bs ab khudpe control rkhta hu.. kbhi kbhi pta nii kyu status lga deta
+                    hu..
+                    and you already know hmara status sirf aapko visible hota hai baaki sbse hidden rehta hai.. maybe
+                    bahut
+                    jayda bura ho chuka hu ab.. accha ya bura kaisa bhi hunga baa par aapka bura nhi chahunga aapko
+                    force
+                    nhi kar skta cause i want my this thing to be free.. free to choose on her will free to decide if im
+                    the best
+                    for you.. its all about you.. par jab blackmailing ya force karta tha jo aapko lga uska reason tha
+                    ki
+                    hme block kare par kabhi karti hi nhi.. sorry kuch bhi real mein nhi mean kiyea hai hm kabhi.. dur
+                    kar
+                    rhi thi aap toh hm soche acche se dur kar de phr nhi toh aap toh jaanti ho message kar deta hu kitna
+                    bhi
+                    control karu kabhi kabhi haar jata hu.. khud se ladd rha hota hu karu ki na karu baat karu ki na
+                    karu
+                    poochu ya na poochu.. bla bla bahut kuch chl rha hota hai ab.. kyu kisiko pareshaan karu jab unhe
+                    karna
+                    hi nhi hmse.. akela rehna seekh chuka hu accept kar liya hai ki nhi karta ab deserve kisiko.. bahut
+                    kuch
+                    seekhna baaki hai abhi.. </p>
+
+                <p>Kabhi kabhi lgta hai hme ye sb confess hi nhi karna chahiye tha hidden hi rkhna tha i should have
+                    chosen to hold dear to you in silence.. par phr lgta hai ki sahi kiya jo confess kar diya.. par sach
+                    batau toh
+                    sahi mein nhi pta sahi Kiya hu ya glt ab jaisa bhi hai thik hai.. kya fark padta hai na.. usse bhi
+                    kuch
+                    change nhi hota phr bhi aise hi rehta.. kyuki jo hona hai vo hoga hi.. </p>
+
+                <p>To hold you dear it wasn't really my choice.. it never was nor at that time nor today.. (aisi lambi naak vali ko hm kyu choose karenge bhala.....) but it was
+                    you who
+                    made me fall for you.. i falled for you helplessly.. control bhi kiya tha bahut kiya tha par pta nhi
+                    kaise hota chala gya ruka hi nhi.. badhe hi ja rha hahah.. ab agr itni pure cute innocent
+                    kind selfless caring.. 
+                    "jitna likhu kam lgta hai, <br>
+                    har din thoda sa apna lgta hai" <br>
+                    hme toh 15 din
+                    mein
+                    hi pyaar ho rha tha aapse par kya kare attraction ho skta tha isslie hm toh 15 din mein
+                    hi jaa rhe the block kar rahe the par phr bla bla kayi baar jaane ka soche the ba aapko bhi pta hai
+                    kabhi nhi jaa paye aur na jaa paayenge.. hme job karne de phr dekho aap aaunga aur papa se maangunga
+                    aapko huhhhhhh.. bina job ke denge nhi isslie capable hoke aaunga.. pta chala jaise sakshi didi vale
+                    ko
+                    maare the hme bhi maar diyea .. darta thodi huuu khaaa lungaaa maaarrr.. unko bol dunga aapki
+                    "crack"
+                    hme dedo😂😂😂😂 .. crack crack.. abhi hm ye likh rhe the na tbhi hme ik cheez yaad aa
+                    gyaaa..
+                    <span> "usse mat lada kar vo crack hai .. "</span>
+                </p>
+
+                <p>kal poora din aur aaj ka poora din hme smjh nhi aa rha tha kya kar rhe hm kyu wait kar
+                    rhe
+                    kis liyea par pta nhi kyu acchanak se kya hu hme (i too dont know) hme lgne lga ye toh buddhu hai
+                    bewkoof hai and i started reading birthday message which you had send me.. haha ab nhi pta usmein
+                    kitna
+                    sach hai ya kya hai par it felt good.. and here im typing again everything for you.. I don't know ba
+                    if
+                    there's anything for me with you but sometimes i genuinely feel that i just care for you I want you
+                    to
+                    be happy with me or without me.. I want you to see you always smiling.. i want you to have
+                    everything
+                    best for you.. i care for you like your father somethime i care like your mother sometime
+                    like
+                    your sister somethime like your brother and sometimes like your.. and more like your husband. Haha jayda kar
+                    rha
+                    par thats true ba.. par chinta nhi kar i won't come near to you if you don't want me.. i will hold dear
+                    to you far
+                    from here.. ❤️
+                </p>
+                <p>
+                    youre such a good person baa. abhi hm train mein hai ghar jaa rhe.. i started missing you.. how i
+                    got
+                    your first voice note for the very first time aaj bhi vo memorable and special moment hai hamare
+                    liyea..
+                    i still remember each and everything like it was yesterday and i hold you dear with what i have.. i
+                    will give you what i get..
+                </p>
+
+                <p>Soo happy birthday onceee again.. ye sb bhejna hai aapko kaise bheju.. pta hai kya socha hai ik diary
+                    kharidu aur usmein ye sb poora handwritten kar du aur phr uske saath kuch aur cheez bhejunga.. par
+                    nhi
+                    pta krunga ki ni kyuki upar padha hi hoga aapne kyu nhi bhej skata.. </p>
+
+                <p>Iiiiiiiiiiiiiiii cherish youuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+                    akshitaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    Joooo hogaaaa dekhaaaaaa jayegaaaaaaaaaaa parrrrr sbseeeee pyaarriiiiiiii hoooo aaaappp hamaareeeeee
+                    liyeaaaaa hme nhi padtaaa farkk ki aap pyaar kar rhii yaa nhiiii kar rhi toh acchi baat nhi toh
+                    koiii
+                    dikkattttt nhii hmeeeee hmm karengeeeee pyaarrrrr kuchh bhii hoooo jayeeeee aaapkoooo hiiii
+                    karengeeeee
+                    hehehehhehehehehe.. seeeigggg youuu and realising howwwwww innocenttt youuu areeee.. ba hm kitna bhi
+                    control karte hai nhi hota yaad aa jati ho aapp thoda bahut yaad aati toh chlta bhi na har time yaad
+                    aati ho aap.. poooraaa dinnn.. padh raha aap yaad aa gyi.. khana khaa rha aap yaad aa gyi.. game
+                    khel rha
+                    aap yaad aa gyi.. class jaa rha aap yaad aa gyi.. areee aisee thodi hota bhaii.. </p>
+
+                <p>duniyaaaa ki saaaariii khushiiiii denii hai aaapkoooo careee karnaaa hai aaapkoo ikdm bachoo jaisa
+                    trreartt karna hai.. aisa gaall pakadd ke golululuu ye sb karnaa hai kheechna haiii gaaall..
+                    aapkooo gussaa dilanaaa hai pareshannn karnaa hai.. hihihiiiii.. aaap dracula hoo meeriiii rawrrrr..
+                    i
+                    wish i could treat you better baa.. i want to be the best version of myself so that I can honor our
+                    bond.. i
+                    want to have a secure job so that i can let you live peacefully.. i know aapko nhi padega fark ki hm
+                    kaise rkh rahe par hme toh apni trf se best karna hai naa so that kuch bhi kamm na ho aapke liye...
+                    Aur
+                    kuch agr accha nhi kar raha hunga toh papa hme denge bhi nhi naa.. bolenge meri beti ko khush kaise
+                    rkhga toh kya bolunga.. i know its early and jb cheeze thik bhi nhi hai toh shyd ye bolna thik nhi
+                    hai.... wait for me few more years </p>
+
+                <p>When someone asks to me what kind of girl I want.. i just start giving the description of you.. she
+                    MUST
+                    be kind.. have a pretty smile.. have a moles on her face and height should be around 5'5(that's what
+                    you
+                    have told me stupid.. hme lgta hai lambi hogi hmse agr lambi hui aap toh phr dekhh betaaaaaaa kyaa
+                    karta
+                    hu.. jhukk ke rehna padega hamare saamne huhh).. and have a big noss 🤭.. in reality i dont want any
+                    other women in my life im happy with you.. you're enough.. hmne bola hai na hme koi aisa chahiye jo
+                    aapse bhi jayda pure ho kind ho.. par in reality hamare liye aapse jayda koi pure hai hi nhi.. ye sb
+                    taarif nhi kar rha pagal buddhu.. real mein bol rahaa itnaa jaan gya hu ab khudko bhi aur aapko
+                    bhi..
+                    hame nhi chahiye better insaan.. aap ho jaisi ho acchi ho badtameez cute soft pyaari nalayak
+                    besharam
+                    dusht.. sb ho aap you're the best one baa..dur ya pass.. why would i search for someone else when i
+                    already know
+                    you're the only one whom i want.. </p>
+
+                <p>Baa jb milunga na toh maar lena jitna marna hoga.. bahut difficult kar diya hai na har cheez isslie
+                    jitna
+                    marna hoga maar Lena pitai kar dena.. jitna tez, jor se jaisa marna ho sb chalega.. i deserve this
+                    punishment.. par jayda maaregii toh jo kaaju katli saath mein laaya rahunga vo nhi dunga.. aapko
+                    baandh
+                    dunga phr aapke saamne aapko dikha dikha ke aapke lips pe touch kara karake khud khaunga 😂😂 </p>
+
+                <p>Me angry angryy.. huhh.. sakshi ne aapki kurti pehni hai.. status lagaya hai aapne aur usmein unhone
+                    aapka pehna hai.. unko bol apna pehna karee doosre ka nhi cheente.. i miss you ba...</p>
+
+                <p>Pta hai abhi hm thoda kaam kar rhe the phr hm phone touch kiyea and acchanak se i started calling you
+                    "budddhu baa buddhu baa buddhu baa".. nahi pta kyu koi reason nhi tha..bss accha lg rha tha ..kaisi
+                    hai
+                    yrrrrr hattt sach mein buddhu ho aap.. dimaag se hili huii khiski hai dimaag se.. jaise gaadi ka
+                    tyre
+                    puncture hota hai vaise aapke Humour ka tyre puncture hai .. par maja aati hai i want to be with you
+                    my
+                    sweeet dumbooo blehhh .. im sure agar ab kabhi saath rahe toh it will be gonna exploding fun..
+                    giraffe
+                    🦒.. agr buddhu ji shopping jati hai aur usse 4 cheeze psnd aati hai toh usse chaaro chahiye nhi toh
+                    nhi
+                    chahiye .. ye kaisi baat hui ajeeb hai.. par ye bhi hai ki bolegi nhi kya psnd aaya hai aur chahiye
+                    bhi
+                    sb.. 🧠 baa isse kyu rkhaa hai ?? Kab use karegi haann? Agr batayegi nhi toh pta kaise chalega ki
+                    aapko
+                    psnd kya hai.. koi na hm smjh jayenge dont worry you stupid and i will buy all 4..</p>
+
+                <p>Abhi hmne ik line padhaaa damnnn kya line thii sun na chahegiii .. kyu hi mana karegi gossips ke liye
+                    toh
+                    ready hi rehti hai.. badtameez.. line thii
+                    <span class="quote">
+                        "Nibhana hi toh mushkil hai, <br>
+                        Chahana toh har kisi ko aata hai"
+                    </span>
+                    And damnn thats a beautiful one.. kyuki psnd toh bahut log aa skte hai kar skte hai par phr us cheez
+                    ko
+                    nibhana vahi toh main cheez hai life ki.. kisi ka end tk saath dena iss all it matters now.. aapko
+                    pta
+                    hai na hm promises poora karne ka try karte hai.. toh i promise you one thing.. no matter what
+                    whether
+                    we are together or not i will be there for you whenever you need me.. i will support you no matter
+                    how
+                    bad decision it is.. aapke pass koi nhi hai jo aapka saath nhi de rha toh ik baar piche dekhna and
+                    you
+                    ll find me.. (kisi ko dump karna ho toh bhi bolna usmein bhi saath dunga )if no one is there for you
+                    I'll be there for you.. its a promise
+                </p>
+
+                <p>I wait for your text each and every day.. hm aapki chat pe jaake bs dekh rahe hote haha ab jo bolna
+                    hai
+                    bol le.. aisa hi hu aur rahunga jayda bolegi toh daant tod dunga.. dur reh hmsee smjhi naaa.. hm
+                    ikdm
+                    kaalu aur aap itni Gori .. kaise kyu.. ya toh hm thoda gore hote ya toh aap thoda kam gori hoti..
+                    aise
+                    toh glt scene ho jayga maan le kisi trh saath aa gye rehne lage toh log kya bolenge.. chii bhaii..
+                    hm
+                    subah uthte hai and sochte hai aaj aaya hoga text aaj kari hogi message aaj miss kar rhi hogi..
+                    hahaa
+                </p>
+
+                <p>Ik din aisa nhi jata jis din yaad na aaye iss bakasur ki.. buddhuuu hatttt hurrrr durrrrrr.. bhakk
+                    yaha
+                    se.. dinbhar yaad aati rehti hai bewkoof kahi ki.. nalayak dhusht badamteez billiii..
+                    I miss you baa.. your voice.. your singing your laugh everything each and every thing.. i miss all
+                    of
+                    you ..i valued you for who you are.. whatever you are i cherish it.. each and every detail of you..
+                    i hope my affection for you remains unchanged forever.. aise hi rahe hmesha
+                    na change ho kabhi.. aapke sir pe pat pat karna hai .. i know weird hu.. ik baj rhe hai abhi aur hm
+                    idhar aapse baat kar rhe .. chll goodnight.. radhe radhe ❤️</p>
+
+                <p>R is for red ♥️</p>
+                <p>Red is for blood 🩸</p>
+                <p>Blood is for heart</p>
+                <p>Heart is for you </p>
+                <p>You is for me 🦲</p>
+                <p>Me is for you 🫀</p>
+
+                <p>hehe.. purane screenshots mein mila tha.. accha hai na.. i hope aap acchi ho.. thik ho aap and khush
+                    ho..
+                </p>
+
+                <p>Hme pta hai hm gussa hai aapse bahut gussa hu par hate nhi kar skta ba.. never ever.. its upto you
+                    how
+                    you want to treat me i won't mind that.. parr haan gussa bahut hu smajhi na bandar.. gandi si shakl
+                    leke
+                    jo itna banti hai na dikhata hu kabhi milo aapp.. kis layak hai shakal hai aapki haan boll na.. itne
+                    saare til kaan ke pass til gaal pe til gardan ke beech mein dil itna til leke kaha jayegi.. hme
+                    chodke
+                    kisi aur ko acche bhi nhi lagte honge aapke ye till and ik cheez aur sun le badtameez jo aap bindi
+                    lagana bhool jati ho na mat bhoola kar naak tod dunga agr ab lagana bhooli.. try kiya karo ki
+                    hamesha
+                    lagalo cause you look
+                    absolutely........... challl bhaggg yahaa se saatvi fail.. kyu bataye hm.. </p>
+
+                <p>aapka mummy and sakshi didi ka satus laga tha.. aap bahut lambi lag rhi thi.. un dono se toh bahut
+                    lambi
+                    ho... hmne nannu ko message kar diya tha ki ye itni lambi kyu hai but baad mein delete kar diya par
+                    aapne shyd notification se padh liya tha toh aapka notification aaya tha.. just hearing your voice
+                    made
+                    me happy.. hmne khudko bhej liya vo voice note aur save kar liyaa kyuki aapki voice miss karta hu
+                    aur
+                    abhi koi purana voice note bhi nhi tha jisse sun liya karo.. toh isko save rkha hai ab.. pyaari
+                    awaaz
+                    hai aapki.. i want to sleep in your lap while you sing something and playing with my hairs.. haha
+                    sorry
+                    aise thoughts aate hai hme.. ja na hatt yaha se hurrr bhkkk </p>
+
+                <p>baa you desreve all the happiness of this world and i wish i could give you all that.. and for
+                    me..for me
+                    you are the world and if i have you i have my happiness and thats enough for me.. jitni pyaari app
+                    ho na
+                    utna koii nhi hai hamare liyea akshita.. aur na koi ban payega.. kyuki koi hai nhi.. i still remeber
+                    how
+                    i started talking to you.. how you and i build this relationship.. how much we have talked.. what we
+                    have
+                    talked.. kuch batane ka mann nhi karta par hai hi apne aap bta jata hu.. smjhane bhi nhi chahta kuch
+                    par
+                    phr lagta hai ki buddhu hai isslie bata deta hu.. bewkoof si ho aap ba.. aapko yaad hai hmne bola
+                    tha
+                    ki aap jisse pyaar karogi vo bahut lucky hoga.. chahe hm ho ya chahe koi aur ho.. i still believe my
+                    those
+                    words.. kyuki ho app kuch alg aur sblogo ko ye nhi smjh aayegaa.. kuch bhi ho hamesha aise hi reh...
+                    jaisi hai vaisi reh.. jo accha lage vo karo aap..</p>
+
+                <p>abhi phr se hurt kiya hu..haha..sorry ba.. bolta hu mat kar messages manti nhi ho aap.. message aaya
+                    tha
+                    aapka aaj (college mein dance ki thi uska status lagaya tha aapne).. karr rha wait toh karne de
+                    aapko
+                    kya.. kaise samjhau har cheez kyu ni smjh rhi aap hme hota hai hurt jab hm wait kar rhe hote hai kya
+                    karu ismein ab change toh ho nhi rha yee kitna try karu.. hm hai sensitive ismien kya glti hai
+                    hamari hm
+                    kutte ya janwar ko dekh ke ro dete hai ab ismein kuch kar toh skta nahi.. sorry ba abhi bahut change
+                    hona baaki hai i wish aapke college se nikalne se Pehle sb sahi kar lunga khudko.. aur pta hai ye
+                    bhi
+                    janta hu ki tbtk itna late ho chuka hoga sb ki hme milegi hi nhi.. haha..</p>
+                
+                <p>aaj itne din baad vapas likh rha hu haha.. bola tha na kitna bhii try karunga kitna bhi khud ka
+                    sochunga
+                    kitna bhi bhagwaan ko yaad kar lu maan lu aap ki jagah vo bhi nhi le sakte hehe.. ik cheez suna tha
+                    hmne
+                    jismein ik baba keh rhe the ki if you have one heart and you have to give it to the best person then
+                    why
+                    not
+                    give it to the krishna for he is the best of best.. i decided to give my heart to you.. for me
+                    you're
+                    alreadyyy best im not exaggerating or comparing you with god.. its just what i think.. for you i
+                    cant hate you for you i can be for you i can be myself for you with you i can be the way i want to
+                    be.. its just feels
+                    amazing to hold dear someone like you.. with you i want to be the person who will believe you in any
+                    situation
+                    in any way.. </p>
+
+                <p>You cant change a thing by cherishing harder. <br> hme lagta hai ye shi hai kyuki dekh na kuch bhi ni
+                    change ho rha.. jitna bewkoof dikhta hu utna hu nahi smjh toh aata hai sb baa par kabhi kabhi bs
+                    dekhna
+                    hota hai ki kya saamne vala kya karega kya vo jo samne socha hai uska ulta karega ya nhi and you
+                    know
+                    kabhi hua hi nhi ulta.. haha funny na</p>
+
+                <p>aur aapko pta hai hmne butter panner banana seekh liya hai.. par pyaaz bgrh nhi kaat pata aankh mein
+                    lagta hai voo and tamatar sala ajeeb geela geela lagta haii toh agr ye sb koi kaat ke de deta hai
+                    toh
+                    mast sa bana lleta hu.. ab aapko khilaunga thoos thoos ke khilaunga phr sununga heavy ho gyaaa
+                    haayeeee... kitnaa pyaara lagta hai jab bolti haiii dil ko aise chuu jaati hai</p>
+
+                <p>call ki thi aaj ye bandar usmein bhi hm ulta seedha kar diyea (sorry).. haan toh kya karta itne din
+                    baad
+                    kari hai aur ulta sidha seekh rhi toh gussa nhi aayega toh aur kya aayega boll chapri bolne lagi
+                    hai..
+                    be abee bolti hai ab dallee bhi bol rhi hai bade logo ko.. sb glt glt seekho haina.. buddhu pta hai
+                    aapko maja aata hai isslie bolti hai par nhi bolna chahiye avoid kar jitna kar sako.. hm khud gali
+                    kam
+                    dene ka try kar rhe par nikal jati hai par chodd dunga itna bharosa hai khudpe.. and pta hai jab
+                    hmne
+                    bola ki aapko abhi bhi lagta hai hm kasam pe viswas karte honge.. and then aapne thodi baar kasam
+                    khayi
+                    par phr boli maan le.. sorry iske liyea bhi.. i do trust you isslie kasam khaane ki need nhi hai ba,
+                    aap
+                    bol do jo bhi bolna and i will believe you... you are special one for me and people trust their
+                    special
+                    one regardless of what had happened..
+                </p>
+
+                <p>
+                    ba hmne bola tha na hm bhagwaan se close ho jayenge.. ho rha close and maybe kuch saal mein aur
+                    jayda
+                    close ho jaunga.. hide karna chahiyea ye sb par aapko toh bta hi skta hu meri bandar ho aap aapse ye
+                    sb
+                    nhi hide karna.. youre already divine. chll nikal murkh😂
+                </p>
+
+                <p>hamari aadat haiii ki hm whatsapp pe aapki chats dekhte rehte hai toh aaj bhi dekh rhe the par phr
+                    kuch
+                    aise hi dekh rhe the par phr usmein advance privacy dikha hmne daba diya ab uski notification aapke
+                    pass
+                    chaliiii gyiiiii..nhi janee chahiyiii thiii.. hmne band kar socha hat jayegaaa uski bhi notification
+                    chali gayiii.. phr hmne socha ab notification toh chali hi gyi hai toh kyu na vapas se on kar du
+                    isslie
+                    vapas on kar diya.. parrr aapne message kar diyaaaaaaa..... </p>
+                <p>bahut yaad aati hai yrr hmne aapse bola tha kuch gaake bhej dena par aapne bheja nhi.. i miss your
+                    singing.. your songs (jo ki glt hote hai).. jab baat kar rhe hote the and aap gaane lagti hai aur hm
+                    bss
+                    shaanti se sun rhe hote the uss time tareef nhi kar pa rha hota tha par vo bahut alg feeling hoti
+                    thii
+                    jab kab bhajan ya bhagwan vale gaane gaati thi toh bss sunte hi din accha sa lagne lagta tha.. aur
+                    hamare haath mein kuch ho rhaaa mtlb jo nails ke niche vala region hai vaha na ikdm alg color ho
+                    raha
+                    dark sa.. </p>
+                <p>im writing this after so many days ba.. like bahut din baad bahut kuch hai beech mein.. 5june is the
+                    day i wont be able to forgot.. itne din baad likh rha nhi smjh aa rha kya likhu.. need thi aapki par
+                    control liya tha.. socha tha ki baad mein bta dunga ki kya hua hai par phr hme lga ki ab kya mtlb
+                    btake issle bs rehne diya bola bhi tha jab exam khtm honge aapke tb bta dene ka par phr hme lga ye
+                    sb thik nhi hai.. mard hu itna toh seh hi skta hu.. haha.. bahut kuch realise hua hai kya kaise
+                    kyu.. when u are incapable of doing something then it make you feel hellish like u want to do it but
+                    u cant.. u have to bear that thing.. bs ab iske aage kuch nhi bolunga kharab nhi karna aapka bday..
+                    pta hi hme kitna sad hoti hai..</p>
+                <p>call ki thi aaj aap hme pta chala ki roti hai..... nhi bta rhi thi poochne pe bol rhi ki bahut
+                    reasons hote hai.. aree toh hote hai toh kya roeyegii ?? heinn ye kaunsa logic haii bhaii?? hme toh bahut
+                    bolti thi mt rooo control kar ab khud ro rhi hai.. nhi roya kar ba yrr uss time toh kuch nhi bol paya
+                    par it hurts me more when i m not there for you.. jab aise roo rhi ho akele aur hm aapko dekh ke
+                    hass naa paye aise thodi acchaa lagta hai ba.. rona hai toh hamare saamne roo enjoyemnet mile hme
+                    naak kaise chuu rhi hogi vo dekh paunga kaise aapke muh mein jaa rha hoga ye sb toh dekhne doo..
+                    akele roke thodi kuch milega.. chll aaaj promise kar ki aajke baad nhi royegi.. hamari kasam aapko..
+                    (upar kasam ka bol hu ki nhi manta par ye exception hai).. i m always with you ba.. far far away
+                    from you but still close to you so agr rona hai toh please bta diya kar call kar liya kar kitna bhi
+                    baj rha hoga kahi bhi hunga ill pick up..</p>
+
+                <p>
+                    abhii kuch din pehle hmne upar ye likha tha aur aaj hm aapko support ni kar paaye.. hehe sorry.. bs
+                    bol deta hu par karta kuch nhi.. bs badi badi baatein karva lo kabhi support nhi kiya sorry iske
+                    liee.. abse ni hoga aisa ye last tha agle baar se pakka.. dhyaan rakhunga har cheez ka..
+                </p>
+                <p>
+                    aree buddhu photo lagati hai toh hme toh hide kar diya kar na... hme screenshot lena pad jata hai
+                    aapka aur dance aap bhejti nhi huhh.. vo bhi bss status lga degi bss dekhte raho aree save karne ka
+                    mann karta hai hamara haiii.. bataya thaa naa hamari gallery aapke naam ho jati hai bss hidden rkhta
+                    hu sb.. 300+ hai hamare passs.. kuch delete ho gye hai 😔.. kyuki unhe add nhi kar paya tha..
+                </p>
+                <p>
+                    ab kuch din bday hai aapkaaaa...happppyyyy birthhhdayyyy billliiiii... enjoyyy karrr khoob naach
+                    hmesha khushhh rehhh hameshaa hastii rehhh..
+                </p>
+
+                <p>
+                    abhi hm ik video dekh rahe the ik couple the and unhone ne ik pyara se ghar banaya tha.. like uska design and interior sb un dono ne hi khud kiya tha unkaa bedroom kitna sahi thaa do net the .. ik mosquito ke liyea aur ik light ke liyeaa woowww.. aurr ptaaa haiiii unkaa ghar itne mast location pe thaaa ghar ke bahar river haii naa mast.. aur unhone ik floating surface jaisa bana diya jo float karta rehta hai par attached hai ghar se aurr uspee ye flowers bgrh thee andddd u can just lay thereee.. kitaaaa sahiiii haiiii naaaaa... ye sab aapkoo kyu bta rha??
+                    kyukiiiii i want to do this with you.. nikal ab doosra video dekhungaaa...huhuhu aeeeee maariii jayegiiii 🤙🏻
+                </p>
+                <p>
+                    hehehe.. so you asked me to go away.. you asked me to love you from the distance.. thikk haii ye bhii sahii pyaar hi toh karna hai dur se bhi kar lunga usmein kya dikkat hai meri buddhu.. chinta mat kar nhi rota ab.. shyd seekh gya hu ya ab pta haii ki kaise control karna hai.. sb thik hai pehle bhi aur abhi bhi.. na pehle kuch chahiyea tha na abhi kuch chahiyea.. pehle bhi tha kya ho rha aur aaj bhii.. toh ismein itni dikkat kya hai.. everyone has right to choose their favourite person and you also have it.. isslie kisii bhi cheez ke liye sad mat ho jo aap ho jati ho jitna hm jante hai aapko.. aap tb bhi pure thi hamare liyea aur aaj bhi hooooooo... aapko aur jaan na chahte the hm
+                </p>
+                <span>if god gave me any chance to choose you i will gladly choose you.. </span>
+                <p>
+                    chll accha ye sb chodd aur ye sun.. <br>
+                    baa jii jinse bhi aap baat karti ho toh ye mat smjh liya kar ki sb acche honge ya sb accha ye soch rhe aapka kuch bss pretend bhi kar rhe hote hai.. aap ye sb janti hi ho par aap jitni acchi ho na usse aapko lagne lagta hai vo saamne vala bhi accha hoga par aisa nhi hota baa.. isslie soch smjh ke kisi se baat kar aur close aa.. kuch sikha rha seekh le buddhu dimaag mein kudda rkhne se ghar nhi chlta and i will unblock you for sure par kab ye ni pta.. par dont worry i wont be unblocking you to text you..
+                </p>
+                <p>
+                    chll accha isse ab end karta hu shyd bahut lamba ho gya haii.. aapko link toh bhej diya hai par shyd vo kaam ni karega toh isslie vapas se bhejunga.. in this message i have not for once said it so i will be saying it noww.. 
+                    <h5 style="margin-left: 30%;">   I LOVE YOU AKSHITA ♥️</h5> 
+                    <p>be happy, keep smiling, keep yourself healthy, keep yourself safe.. i really wish jaisa hm chahte hai 3 saal baad sb vaisa hi ho kyuki i dont want to give up on you.. i hate it but i have to wait (mana karegi toh naak ke baal nooch lunga) meri marzi hai mai karunga wait kuch nii kar skti tum (kitni der baad tum bola hai).. youre the definition of love to me. milna ya na milna sb bhagwaan pe hai.. kismat mein hua toh pa lunga nhi toh thik haii pyaar ka matlb paana thodi hota haii.. chll dhyaan rkh ab ni ho rha niche vala part pehle hi likh liya tha.. aur likha tha nhi rok paunga gir jayenge vo.. love you..</p>
+                </p>
+                <p>ik poem likh rha jayda hasna mat.. hme nhi likhnaa aata smjhi naa.. khud se likha tha phr chatgpt ne
+                    ittu sa
+                    rhyme karna ka try kiya (usse bhi nhi hua) bss baaki khud likha hu.. vaise bhi kuch bhi likh deta
+                    kaunsa aapko smjh
+                    aa rha (uttrakhand ke schools) ab kya hi kare.. chll na smjh nhi aaye toh sharma nhi pooch lena
+                    thikkk baa.. hmse kya sharmana..</p>
+                <div class="poem">
+                    I've never met you,<br>
+                    Yet i feel your breath <br>
+                    As if its warm trace <br>
+                    i do want to praise you, But every phrase i find <br>
+                    Leaves the mark of doubt, as if failing the divine <br>
+                    your hearts seem to be pure, like the stilled ocean <br>
+                    your hands feel soft, like the petal <br>
+                    Each breath i take, it searches for yours <br>
+                    In silent whispers, my longing roars <br>
+                    Eyes speaks <br>
+                    When I can read yours <br>
+                    Restlessness in my life <br>
+                    Wants the calmness of yours <br>
+                    The present me <br>
+                    Laying the stones for future us <br>
+                    With some hope <br>
+                    With some pessimism, <br>
+                    moving ahead with a gentle despair <br>
+                    You're the after-movie <br>
+                    Leaving a joyish beam <br>
+                    On the faces that have looked you <br>
+                    While i sleep <br>
+                    My soul is left wandering for you <br>
+                    Finding a path to you <br>
+                    Eyes open <br>
+                    mind blocked <br>
+                    Lips tremble <br>
+                    But the smile is revealed <br>
+                    That smile ends the poem <br>
+                    Saying this happens only for you
+                </div>
+                <div class="signature">
+                    Yours always,<br>
+                    Your Swan Boy
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <h2>What should i change in me... cause i know there need to be some changes</h2>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c2461516-6ef7-4953-9fd6-bf4db7df97d4">
+                <input type="hidden" name="subject" value="New Anonymous Message">
+                <input type="hidden" name="from_name" value="Anonymous User">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="h-captcha" data-captcha="true"></div>
+                </div>
+                <button type="submit" class="submit-btn">Send </button>
+            </form>
+            <div id="form-status"></div>
+        </div>
+
+        <script>
+            // Add a nice fade-in effect when page loads
+            document.body.style.opacity = '0';
+            window.addEventListener('DOMContentLoaded', () => {
+                setTimeout(() => {
+                    document.body.style.transition = 'opacity 1s';
+                    document.body.style.opacity = '1';
+                }, 100);
+
+                // Web3Forms Integration
+                const form = document.getElementById('contactForm');
+                const formStatus = document.getElementById('form-status');
+                const script = document.createElement('script');
+                script.src = 'https://web3forms.com/client/script.js';
+                script.async = true;
+                script.defer = true;
+                document.head.appendChild(script);
+
+                // Handle form submission
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    
+                    // Show loading state
+                    const submitBtn = form.querySelector('button[type="submit"]');
+                    const btnText = submitBtn.innerHTML;
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = 'Sending...';
+                    
+                    try {
+                        const response = await fetch(form.action, {
+                            method: 'POST',
+                            body: new FormData(form)
+                        });
+                        
+                        const result = await response.json();
+                        
+                        if (result.success) {
+                            formStatus.innerHTML = 'Message sent successfully! 🎉';
+                            formStatus.style.color = '#4CAF50';
+                            form.reset();
+                            
+                            // Reset hCaptcha if it exists
+                            if (window.hcaptcha) {
+                                const hcaptchaElements = document.querySelectorAll('[name="h-captcha-response"]');
+                                hcaptchaElements.forEach(el => el.value = '');
+                            }
+                        } else {
+                            throw new Error(result.message || 'Form submission failed');
+                        }
+                    } catch (error) {
+                        formStatus.innerHTML = error.message || 'Oops! There was a problem sending your message. Please try again.';
+                        formStatus.style.color = '#f44336';
+                    } finally {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = btnText;
+                        formStatus.style.display = 'block';
+                        setTimeout(() => {
+                            formStatus.style.display = 'none';
+                        }, 5000);
+                    }
+                });
+            });
+        </script>
+
+</body>
+
+</html>
